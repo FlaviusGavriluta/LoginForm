@@ -1,4 +1,4 @@
-module com.example.loginform {
+module loginform {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,8 @@ module com.example.loginform {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
-    opens com.example.loginform to javafx.fxml;
-    exports com.example.loginform;
+    opens loginForm to javafx.fxml;
+    exports loginForm;
 }
